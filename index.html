@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>SMS unter Linux - Ganz retro mit GSM Modems</title>
+    
+    <meta name="description" content="SMS unter Linux, Einführung in das AT Commandset und der Vergleich zwischen Gammu/Wammu/libgammu und gnokii -- powered by impress.js">
+    <meta name="author" content="Sebastian Muszytowski" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="impress" class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Dein Browser supportet <b>nicht</b> die benötigten Features um diese Präsentation interaktiv anzuzeigen.</p>
+        <p>Am besten funktioniert diese Präsentation unter <b>Chrome</b> oder <b>Safari</b>.</p>
+	<p>Firefox 10 wird auch in der Lage sein es interaktiv anzuzeigen.</p>
+    </div>
+
+    <div id="intro" class="step slide" data-x="-1000" data-y="-1500">
+        <q><strong><b>SMS unter Linux</b></strong></q>
+	<br /><br /><br />
+	<p>Oder: Der Untergang einer einst aufblühenden Technik</p>
+	<br /><br /><br /><br />
+	<p>&copy; 2012 Sebastian 'muzy' Muszytowski</p>
+    </div>
+
+    <div id="schedule" class="step slide" data-x="0" data-y="-1500">
+        <q><b>Themen von heute:</b><br/><br />
+	- Benötigte Hardware<br />
+	- Übersicht der Linuxsoftware<br />
+	- Was geht und was nicht geht...<br />
+	- LiveDemo?
+	</q>
+    </div>
+
+    <div id="hw" class="step" data-x="-800" data-y="-450" data-rotate="40" data-scale="2">
+        <p><b>Benötigte Hardware</b></p>
+    </div>
+
+    <div id="hw2" class="step" data-x="300" data-y="-500" data-rotate="180" data-scale="1">
+        <p>Ein <strong>GSM Modem</strong>...</p>
+    </div>
+    <div id="hw3" class="step" data-x="300" data-y="-800" data-rotate="180" data-scale="1" data-z="-3000">
+        <p>...findet sich in jedem <a href="#">UMTS-Stick</a> oder <a href="#">Mobiltelefon</a><br/></p>
+    </div>
+
+    <div id="big" class="step" data-x="0" data-y="1700" data-rotate="180" data-scale="6">
+        <p>Nutze <b>USB</b> <span class="thoughts"></span></p>
+    </div>
+
+    <div id="tiny" class="step" data-x="-1000" data-y="1200" data-z="-3000" data-rotate="300" data-scale="1">
+        <p><b>Bluetooth</b></br>oder <b>Infrarot</b></p>
+    </div>
+
+    <div id="tiny2" class="step" data-x="-950" data-y="1735" data-z="-3000" data-rotate="90" data-scale="1">
+        <p>und nutze ein <br/><b>TTY</b> (<i>ttyUSBX</i>)</p>
+    </div>
+
+    <div id="ing" class="step" data-x="2500" data-y="-850" data-rotate="270" data-scale="6">
+        <p>Das war doch <b class="positioning">einfach,</b> <b class="scaling">oder ?!</b></p>
+    </div>
+
+     <div id="software" class="step" data-x="7500" data-y="-400" data-rotate="180" data-scale="7">
+        <p>OpenSource <b>Software</b> <span class="thoughts">Duell</span></p>
+    </div>
+
+    <div id="tiny3" class="step" data-x="8250" data-y="-260" data-z="-3000" data-rotate="90" data-scale="1">
+        <p><b>Gnokii</b><br/>versus<br/><b>[GW]ammu</b></p>
+    </div>
+
+    <div id="software_hiw" class="step slide" data-x="2400" data-y="1400">
+        <q><b>Funktionsweise von SMS-Software:</b><br/><br />
+	- serielle Schnittstelle<br/>- erweitertes Hayes Command Set<br/>&nbsp;&nbsp;&nbsp; ("AT-Commands")
+	</q>
+    </div>
+
+    <div id="software_gnokii" class="step slide" data-x="3500" data-y="1400">
+        <q><img src="gnokii.jpg"/><br/><br />
+        - ursprünglich für Nokia Telefone<br/>- CLI und GUI vorhanden<br/>- SMSD und C-API
+        </q>
+    </div>
+
+    <div id="software_gammu" class="step slide" data-x="4600" data-y="1400">
+        <q><img src="wammu.png" style="margin-top: -100px; display:inline; vertical-align: middle;"/> [GW]ammu<br/><br />
+        - Gnokii Fork (Gnokii Version 0.58)<br/>- unterstützt Vielzahl von Geräten<br/>- Libary mit API<br/>- CLI, GUI, SMSD und API
+        </q>
+    </div>
+
+    <div id="software_comparison" class="step slide" data-x="4600" data-y="2400">
+        <q><b>Vergleich</b><br /><br />
+	- Beide mitlerweile stabil<br />
+	- [GW]ammu hat die bessere API<br />
+	- [GW]ammu Community aktiver</q>
+    </div>
+
+    <div id="software_links" class="step" data-x="3600" data-y="2800" data-rotate="90" data-scale="2" >
+        <p><b>Die Projekte im Web</b><br/><a href="http://wammu.eu">http://wammu.eu</a><br /><a href="http://gnokii.org">http://gnokii.org</a><br/></p>
+    </div>
+
+   <div id="wg" class="step" data-x="2100" data-y="2500" data-rotate="180" data-scale="2">
+        <p><b class="scaling">Was geht...</b></p>
+    </div>
+
+    <div id="wg2" class="step" data-x="2100" data-y="2350" data-rotate="180" data-scale="2" data-z="-3000">
+        <p><b class="scaling">...und was nicht?</b></p>
+    </div> 
+
+    <div id="demo" class="step" data-x="7000" data-y="2000" data-rotate="0" data-scale="9">
+        <p>Zeit für eine <b>Demo</b></p>
+    </div>    
+
+     <div id="tiny4" class="step" data-x="5630" data-y="2280" data-z="-3000" data-rotate="270" data-scale="1">
+        <p>Schreibe eine SMS an:<br /><b>0176-91370130</b></p>
+    </div>
+
+    <div id="why-quote" class="step" data-x="1200" data-y="2200" data-scale="1">
+	<blockquote>&ldquo;Ein Zyniker ist ein Mensch, der von jedem Ding den Preis und von keinem den Wert kennt.&rdquo;
+			<span class="author">- Oscar Wilde</span></blockquote>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+<script src="js/impress.js"></script>
+
+</body>
+</html>
